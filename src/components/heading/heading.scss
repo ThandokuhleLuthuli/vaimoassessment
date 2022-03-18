@@ -1,0 +1,69 @@
+.heading {
+    max-width:526px;
+    width: 100%;
+    padding-bottom: 12px;
+
+    @media(max-width: 500px) {
+        max-width: unset;
+        width: 100vw;
+    }
+    
+    &_bar {
+        display: flex;
+        span {
+            padding: 2px 8px 2px 8px;
+            font-size: 12px;
+            line-height: 16px;
+            background-color: #FFF0E6;
+            color: #FF6600;
+            
+
+            &:first-child {
+                color: #FFFFFF;
+                background-image: linear-gradient(270deg, #F5515F 0%, #FF7527 100%);
+                border-radius: 2px 0 0 2px;
+                
+            
+            } 
+
+            img {
+                width: 12px;
+                height: 12px;
+                display: inline-block;
+                padding-right: 2px;
+            }
+        }
+    }
+    &_title {
+        color: #333333;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    
+    &_text {
+        display: inline-block;
+        padding: 2px 8px 2px 8px;
+        color: #999999;
+        background-color: #EDF0F3;
+        font-size: 12px;
+        line-height: 16px;
+        margin-left: 12px;
+    }
+
+    &_reviews {
+        span {
+            font-size: 12px;
+            line-height: 16px;
+            color:#999999;
+            text {
+                color: #FF6600;
+            }
+            &:last-child {
+                color:#333333;
+                margin-left: 24px;
+            }
+        }
+    }
+
+}
+

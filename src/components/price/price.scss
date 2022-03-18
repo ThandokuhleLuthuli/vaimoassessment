@@ -1,0 +1,35 @@
+.price {
+    max-width: 526px;
+    width: 100%;
+    border-top: 1px solid #E6E7EB;
+    border-bottom: 1px solid #E6E7EB;
+    
+    
+    &_container {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        display: flex;
+    }
+        span {
+            display: block;
+            text {
+                color: #333333;
+            }
+        }
+
+    &_current {
+        color: #FF6600;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    &_old {
+        text-decoration: line-through;
+        color: #999999;
+        font-size: 14px;
+    }
+    &_option {
+        color: #999999; 
+        font-size: 14px;
+    }
+}

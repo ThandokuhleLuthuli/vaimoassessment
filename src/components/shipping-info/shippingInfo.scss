@@ -1,0 +1,49 @@
+.shipping-info {
+    max-width: 306px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
+
+   @media(max-width:500px) {
+       max-width: 360px;
+   }
+
+    &_container {
+        padding: 28px 24px 28px 24px;
+    }
+
+    &_content {
+        display: flex;
+    }
+    &_copy {
+        width: 69%;
+        span {
+            display: block;
+            font-size: 14px;
+            color: #999999;
+            line-height: 16px;
+            padding-bottom: 12px;
+        
+        }
+        &--underline {
+            text-decoration: underline;
+        }
+
+        &--icon {
+            .icon  {
+                width: 14px;
+                height: 14px;
+                display: inline-block;
+                margin-left: 2px;
+            }
+        }
+    }
+
+    &_price {
+        display: block;
+        color: #333333;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

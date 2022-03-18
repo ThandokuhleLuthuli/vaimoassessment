@@ -1,0 +1,21 @@
+.main {
+    display: flex;
+    padding-top: 48px;
+    
+    &_column {
+        &:first-child {
+            max-width: 416px;
+        }
+        padding-right: 24px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    @media(max-width: 500px) {
+        flex-direction: column;
+        padding: 0;
+
+    }
+}
