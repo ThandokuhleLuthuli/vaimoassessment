@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React from 'react';
-import tick from './circular-tick.png'
+import tick from '../../assets/images/circular-tick.png';
 
 function Heading(props) {
     const prod = props.prod;
@@ -9,7 +9,7 @@ function Heading(props) {
 
     
     return (
-        <div className="heading">
+    <div className="heading">
         <div className="heading_bar">
             <span> Ready to ship</span>
             <span><img src={tick} alt=""/>In stock</span>

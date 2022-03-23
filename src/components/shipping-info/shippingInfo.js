@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../button/button';
-import info from './info.png';
-import mail from './mail.png';
+import info from '../../assets/images/info.png';
+import mail from '../../assets/images/mail.png';
 
 
 function ShippingInfo(props) {
@@ -9,7 +9,7 @@ function ShippingInfo(props) {
   const prod = props.prod;
 
   return ( 
-  <div className="shipping-info">
+<div className="shipping-info">
     <div className="shipping-info_container">
       <div className="shipping-info_content">
         <div className="shipping-info_copy">
@@ -20,7 +20,7 @@ function ShippingInfo(props) {
         <span className="shipping-info_price"> {prod.shipping.method.cost.currency.symbol}{prod.shipping.method.cost.value} </span>
       </div>
       <Button modifier="primary" name="Login to Purchase" />
-      <Button modifier="secondary" icon={mail} name="Contact the Supplier" />
+      <Button modifier="secondary" name="Contact the Supplier" icon={mail} />
     </div>
 
   </div>

@@ -5,7 +5,7 @@
 
     @media(max-width: 500px) {
         max-width: unset;
-        width: 100vw;
+        
     }
     
     &_bar {
@@ -48,6 +48,10 @@
         font-size: 12px;
         line-height: 16px;
         margin-left: 12px;
+        @media (max-width: 500px) {
+            float: right;
+            margin-left: 0;
+        }
     }
 
     &_reviews {

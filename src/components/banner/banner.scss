@@ -8,11 +8,11 @@
 
     @media(max-width: 500px) {
         max-width: unset;
-        width: 100vw;
+        
     }
 
     &_image {
-            background-image: url('./banner-image.png');
+            background-image: url('../../assets/images/banner-image.png');
             background-repeat: no-repeat;
             background-size: cover;
             margin: 0;
@@ -32,6 +32,10 @@
             color: #FF6600;
             padding-right: 24px;
             line-height: 16px;
+            @media (max-width: 500px) {
+                padding-right: 12px;
+                margin-left: 24px;
+            }
 
             &:first-child {
                 margin-left: 24px;
@@ -42,7 +46,7 @@
             
             &:last-child {
                 list-style: none;
-                background-image: url('./arrow-right.png');
+                background-image: url('../../assets/images/arrow-right.png');
                 background-repeat: no-repeat;
             }
         }
