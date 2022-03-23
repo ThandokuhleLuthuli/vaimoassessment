@@ -1,6 +1,8 @@
 import React from 'react';
 
 function Counter (props) {
+
+    //pass in API values through props 
     const prod = props.prod;
 
     return (

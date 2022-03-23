@@ -3,19 +3,24 @@
     padding-top: 48px;
     
     &_column {
+        padding-right: 24px;
         &:first-child {
             max-width: 416px;
         }
-        padding-right: 24px;
-
         img {
             width: 100%;
+        }
+        @media(max-width: 500px) {
+            padding-right: 0;
         }
     }
 
     @media(max-width: 500px) {
         flex-direction: column;
-        padding: 0;
+        padding-top: 0;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 12px;
 
     }
 }

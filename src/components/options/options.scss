@@ -1,24 +1,56 @@
 .options {
     max-width: 526px;
     width: 100%;
-    display: flex;
     padding-top: 24px;
+
+    &_container {
+        display: flex;
+    }
 
     @media (max-width: 500px) {
         max-width: unset;
-        width:100vw;
+        
     } 
 
-    p {
-        
+   >  p {
+        width: 40%;
         color: #999999;
+        @media (max-width:500px) {
+            width: 30%;
+        }
     }
     &_column {
         padding-left: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        @media(max-width: 500px) {
+            padding-left: 12px;
+        }
 
         &:last-child {
+            justify-content: end;
+            width: fit-content;
+            p {
+                display: flex;
+                button {
+                    width: 40pt;
+                    height: 40pt;
+                }
+                input {
+                    width: 80pt;
+                    height: 37pt;
+                }
+            }
             @media(max-width: 500px) {
-                padding-left: 5px;
+                
+               p {
+                   input {
+                    width: 40pt;
+                    height: 37pt;  
+                   }
+               }
             }
         }
         span {
@@ -26,6 +58,10 @@
             padding-bottom: 36px;
             color: #333333;
             font-size: 16px;
+            width: max-content;
+            @media (max-width: 500px) {
+                width: unset;
+            }
         }
         p {
             &:first-child {
@@ -58,6 +94,36 @@
                     
                 }
             }
+        }
+    }
+    &_footer {
+        padding-top: 24px;
+        &-text {
+            font-size: 12px;
+            line-height: 16px;
+            color: #999999;
+            margin-top: 0;
+            margin-bottom: 12px;
+            &--icons {
+                display: flex;
+            }
+           span {
+            img {
+                display: inline-block;
+                width: 28px;
+                height: 12px;
+            }
+           }
+        }
+        
+        &-payment {
+            display: flex;
+            img {
+                display: inline-block;
+                width: 28px;
+                height: 12px;
+            }
+
         }
     }
 }
