@@ -32,9 +32,9 @@ function Main() {
     },[]);
 
     //if loading 
-    if (isLoading) {
-        return <h1>Product is loading...</h1>
-    }
+//     if (isLoading) {
+//         return <h1>Product is loading...</h1>
+//     }
 
     return (
         <div className="main">  
